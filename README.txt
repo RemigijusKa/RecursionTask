@@ -9,8 +9,8 @@ Tree structure:
 	      		7  11
 		       /\    \
 		      3 10   15
-			           /\
-			          8  20
+			     /\
+			    8  20
 
 There are two recursive methods in this program. First is used to insert data into tree, in a way it becomes a binary search tree. Another recursive method looks for a deepest level of a tree. 
 
