@@ -1,18 +1,20 @@
 # RecursionTask
-The program creates Binary data tree and calculates the deepest level of that tree. 
+The program creates dynamic data tree and calculates the deepest level (height) of that tree. 
 
 Tree structure: 
-		      	6
-		       / \
-		      4	  9
-		         / \
-	      		7  11
-		       /\    \
-		      3 10   15
-			     /\
-			    8  20
+		      	A
+		       /  \
+		      B	   D
+		         / |   \
+	      		G  H     J
+		       /\  |    / \
+		      C Z  W   X   Y
+			      /
+			     O
 
-There are two recursive methods in this program. First is used to insert data into tree, in a way it becomes a binary search tree. Another recursive method looks for a deepest level of a tree. 
+Child nodes have reference in parent node in a form of nodes ArrayList. 
+
+There depth calculation method uses 'for each' cycle to explore every node's List of children nodes. Recursion is used in 'for each' cycle to explore deeper and deeper level of a tree.
 
 Empty tree has 0 levels.
 Tree with just one root node has 1 level.
