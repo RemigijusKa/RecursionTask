@@ -1,36 +1,33 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Node {
 
-    private int value;
-    private Node left;
-    private Node right;
+    private String value;
+    private final Node parent;
+    private final List<Node> children = new ArrayList<>();
 
-    public Node(int value) {
-        this.value = value;
-        left = null;
-        right = null;
+
+    public Node(Node parent) {
+        this.parent = parent;
     }
 
-    public int getValue() {
+    public String getValue() {
         return value;
     }
 
-    public void setValue(int value) {
+    public void setValue(String value) {
         this.value = value;
     }
 
-    public Node getLeft() {
-        return left;
+
+    public Node getParent() {
+        return parent;
     }
 
-    public void setLeft(Node left) {
-        this.left = left;
+    public List<Node> getChildren() {
+        return children;
     }
 
-    public Node getRight() {
-        return right;
-    }
-
-    public void setRight(Node right) {
-        this.right = right;
-    }
 }
+
